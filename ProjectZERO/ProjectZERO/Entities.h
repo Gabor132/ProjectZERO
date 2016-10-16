@@ -36,10 +36,29 @@ public:
 	virtual void interactObject(Player* player) = 0;
 };
 
-//Platform class is
+//Platform class is represents floating tiles (can interact with the player)
 class Platform : public Visible, public Interactionable{
+private:
+	int x, y;
 public:
-	Platform();
 	Platform(int x, int y);
+	void drawObject(sf::RenderWindow* window);
+};
+
+//Air class represents the empty tiles (can't interact with the player)
+class Air : public Visible {
+private:
+	int x, y;
+public:
+	Air(int x, int y);
+	void drawObject(sf::RenderWindow* window);
+};
+
+//Ground class represents the bottom tile's of a map (can interact with the player)
+class Ground : public Visible, public Interactionable {
+private:
+	int x, y;
+public:
+	Ground(int x, int y);
 	void drawObject(sf::RenderWindow* window);
 };
