@@ -1,11 +1,11 @@
 
 #include "Entities.h"
 
-Platform::Platform(int x, int y) {
+Platform::Platform(float x, float y) {
 	this->x = x;
 	this->y = y;
 }
 
-void Platform::drawObject(sf::RenderWindow* window) {
+void Platform::drawObject(sf::RenderWindow& window) {
 
 }

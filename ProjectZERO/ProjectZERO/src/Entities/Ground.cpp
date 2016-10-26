@@ -1,11 +1,11 @@
 
 #include "Entities.h"
 
-Ground::Ground(int x, int y) {
+Ground::Ground(float x, float y) {
 	this->x = x;
 	this->y = y;
 }
 
-void Ground::drawObject(sf::RenderWindow* window) {
+void Ground::drawObject(sf::RenderWindow& window) {
 
 }

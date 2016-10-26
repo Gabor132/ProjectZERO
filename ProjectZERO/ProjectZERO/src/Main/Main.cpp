@@ -1,9 +1,11 @@
-#include <SFML/Graphics.hpp>;
+#include <SFML/Graphics.hpp>
 #include "../../src/Loader/MapGenerator.h";
-
+#include "C:\Users\andrei\Source\Repos\ProjectZERO\ProjectZERO\ProjectZERO\Application.h"
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(800, 600), "Project Zero");
+	//Application a; //new way to start main
+	//a.run();
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Project Zero"); 
 
 	sf::Font font;
 	font.loadFromFile("resources/Fonts/Xenotron.ttf");
